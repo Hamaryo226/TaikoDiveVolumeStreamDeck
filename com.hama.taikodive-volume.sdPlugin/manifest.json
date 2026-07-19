@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "TaikoDive Volume",
+  "Version": "1.0.0.0",
+  "Author": "TaikoDive",
+  "Actions": [
+    {
+      "Name": "マスター音量",
+      "UUID": "com.hama.taikodive-volume.master",
+      "Icon": "imgs/Master",
+      "Tooltip": "TaikoDiveのマスター音量を調整します。",
+      "Controllers": ["Encoder"],
+      "States": [{ "Image": "imgs/Master" }],
+      "Encoder": {
+        "Icon": "imgs/Master",
+        "layout": "$A1",
+        "TriggerDescription": {
+          "Rotate": "マスター音量を調整",
+          "Push": "100%に戻す"
+        }
+      }
+    },
+    {
+      "Name": "楽曲音量",
+      "UUID": "com.hama.taikodive-volume.music",
+      "Icon": "imgs/Music",
+      "Tooltip": "TaikoDiveの楽曲音量を調整します。",
+      "Controllers": ["Encoder"],
+      "States": [{ "Image": "imgs/Music" }],
+      "Encoder": {
+        "Icon": "imgs/Music",
+        "layout": "$A1",
+        "TriggerDescription": {
+          "Rotate": "楽曲音量を調整",
+          "Push": "100%に戻す"
+        }
+      }
+    },
+    {
+      "Name": "SE音量",
+      "UUID": "com.hama.taikodive-volume.sound-effect",
+      "Icon": "imgs/SoundEffect",
+      "Tooltip": "TaikoDiveのSE音量を調整します。",
+      "Controllers": ["Encoder"],
+      "States": [{ "Image": "imgs/SoundEffect" }],
+      "Encoder": {
+        "Icon": "imgs/SoundEffect",
+        "layout": "$A1",
+        "TriggerDescription": {
+          "Rotate": "SE音量を調整",
+          "Push": "100%に戻す"
+        }
+      }
+    }
+  ],
+  "Category": "TaikoDive Volume",
+  "CategoryIcon": "imgs/plugin",
+  "CodePath": "bin/plugin.js",
+  "Description": "Stream Deck +のダイヤルでTaikoDiveの音量を操作します。",
+  "Icon": "imgs/plugin",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24"
+  },
+  "UUID": "com.hama.taikodive-volume"
+}
