@@ -108,7 +108,7 @@ abstract class VolumeDialAction extends SingletonAction {
 @action({ UUID: "com.hama.taikodive-volume.master" })
 export class MasterVolumeAction extends VolumeDialAction {
   constructor() {
-    super("master", "master", "マスター");
+    super("master", "master", "全体");
   }
 }
 
@@ -122,6 +122,6 @@ export class MusicVolumeAction extends VolumeDialAction {
 @action({ UUID: "com.hama.taikodive-volume.sound-effect" })
 export class SoundEffectVolumeAction extends VolumeDialAction {
   constructor() {
-    super("sound-effect", "soundEffect", "SE");
+    super("sound-effect", "soundEffect", "効果音");
   }
 }
