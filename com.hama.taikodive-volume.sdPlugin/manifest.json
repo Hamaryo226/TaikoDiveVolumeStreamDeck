@@ -9,8 +9,14 @@
       "UUID": "com.hama.taikodive-volume.master",
       "Icon": "imgs/Master",
       "Tooltip": "TaikoDiveのマスター音量を調整します。",
-      "Controllers": ["Encoder"],
-      "States": [{ "Image": "imgs/Master" }],
+      "Controllers": [
+        "Encoder"
+      ],
+      "States": [
+        {
+          "Image": "imgs/Master"
+        }
+      ],
       "Encoder": {
         "Icon": "imgs/Master",
         "layout": "$A1",
@@ -25,8 +31,14 @@
       "UUID": "com.hama.taikodive-volume.music",
       "Icon": "imgs/Music",
       "Tooltip": "TaikoDiveの楽曲音量を調整します。",
-      "Controllers": ["Encoder"],
-      "States": [{ "Image": "imgs/Music" }],
+      "Controllers": [
+        "Encoder"
+      ],
+      "States": [
+        {
+          "Image": "imgs/Music"
+        }
+      ],
       "Encoder": {
         "Icon": "imgs/Music",
         "layout": "$A1",
@@ -41,8 +53,14 @@
       "UUID": "com.hama.taikodive-volume.sound-effect",
       "Icon": "imgs/SoundEffect",
       "Tooltip": "TaikoDiveのSE音量を調整します。",
-      "Controllers": ["Encoder"],
-      "States": [{ "Image": "imgs/SoundEffect" }],
+      "Controllers": [
+        "Encoder"
+      ],
+      "States": [
+        {
+          "Image": "imgs/SoundEffect"
+        }
+      ],
       "Encoder": {
         "Icon": "imgs/SoundEffect",
         "layout": "$A1",
@@ -57,7 +75,7 @@
   "CategoryIcon": "imgs/plugin",
   "CodePath": "bin/plugin.js",
   "Description": "Stream Deck +のダイヤルでTaikoDiveの音量を操作します。",
-  "Icon": "imgs/plugin",
+  "Icon": "imgs/plugin-marketplace",
   "SDKVersion": 2,
   "Software": {
     "MinimumVersion": "7.1"

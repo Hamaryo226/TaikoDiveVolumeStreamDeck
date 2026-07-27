@@ -4,12 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "validate": "streamdeck validate com.hama.taikodive-volume.sdPlugin --no-update-check",
+    "pack": "rollup -c && streamdeck pack com.hama.taikodive-volume.sdPlugin --output dist --force --no-update-check"
   },
   "dependencies": {
     "@elgato/streamdeck": "^2.0.1"
   },
   "devDependencies": {
+    "@elgato/cli": "1.7.4",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
